@@ -1,10 +1,14 @@
-let numero = parseInt(prompt('ingresa la cantidad de participantes'));
+function tortas(){
+    let numero = parseInt(prompt('ingresa la cantidad de tortas'));
 
-let suma = 0;
+    let funcionamiento = {cantidad:numero, i:0};
 
-for (let i = 0; i < numero; i++){
-    let otronumero = parseInt(prompt('ingresa la edad de cada uno '));
-    suma += otronumero;
+    let Tortas = {} 
+
+    for (funcionamiento.i; funcionamiento.i < funcionamiento.cantidad; funcionamiento.i++){
+        let nombreTorta = prompt(`Ingresar el nombre de la torta ${funcionamiento.i+1} que deseas`);
+        Tortas [funcionamiento.i] = nombreTorta
+    }
+    console.log (Tortas)
 }
-let promedio = suma / numero 
-confirm('el promedio de edad de los participantes es : ' + promedio);
+tortas()
